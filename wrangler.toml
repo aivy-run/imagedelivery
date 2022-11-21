@@ -1,0 +1,14 @@
+name = "imagedelivery"
+main = "src/index.ts"
+compatibility_date = "2022-11-19"
+account_id="62e00c68b0bb6cf43aae42a9d2bfd157"
+
+[vars]
+ENVIRONMENT = "dev"
+ACCOUNT_HASH = "${CLOUDFLARE_ACCOUNT_HASH}"
+ACCESS_TOKEN = "${CLOUDFLARE_ACCESS_TOKEN}"
+SUPABASE_URL = "${SUPABASE_URL}"
+SUPABASE_ANON_KEY = "${SUPABASE_ANON_KEY}"
+
+[env.production]
+vars = { ENVIRONMENT = "production" }
